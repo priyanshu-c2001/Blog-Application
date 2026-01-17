@@ -18,7 +18,6 @@ export default function App() {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      {/* Header - Modified to accommodate navbar */}
       <header className="border-b border-border bg-background/95 backdrop-blur-sm shadow-sm animate-fade-in">
         <div className="max-w-7xl mx-auto px-4 md:px-6 py-6 md:py-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
@@ -39,10 +38,9 @@ export default function App() {
         </div>
       </header>
 
-      {/* Main Content */}
       <main className="max-w-7xl mx-auto px-4 md:px-6 py-8 md:py-12">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8 min-h-[calc(100vh-200px)] lg:h-auto">
-          {/* Left Panel - Blog List with Independent Scroll */}
+
           <aside className="lg:col-span-1 animate-slide-in-left">
             <div className="sticky top-24 lg:max-h-[calc(100vh-150px)] lg:overflow-y-auto scrollbar-thin scrollbar-thumb-accent/30 scrollbar-track-transparent hover:scrollbar-thumb-accent/50 transition-colors">
               <h2 className="text-lg md:text-xl font-semibold mb-4 text-foreground">Latest Articles</h2>
@@ -50,7 +48,6 @@ export default function App() {
             </div>
           </aside>
 
-          {/* Right Panel - Blog Detail */}
           <section className="lg:col-span-2 animate-fade-in-up">
             <BlogDetail blogId={selectedBlogId} />
           </section>

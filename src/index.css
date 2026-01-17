@@ -3,7 +3,6 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  /* Premium color palette - Elegant and sophisticated */
   --background: oklch(0.98 0.005 240);
   --foreground: oklch(0.15 0.02 240);
   --card: oklch(1 0 0);
@@ -149,7 +148,6 @@
     }
   }
 
-  /* Added smooth underline animation for navbar link */
   @keyframes slideInUnderline {
     from {
       width: 0;
@@ -194,7 +192,6 @@
     @apply transition-all duration-200 ease-out hover:shadow-lg active:scale-95;
   }
 
-  /* Added smooth underline animation for footer links */
   .footer-link-underline {
     position: relative;
     overflow: hidden;
@@ -215,7 +212,6 @@
     width: 100%;
   }
 
-  /* Scrollbar styling for scrollable areas */
   .scrollbar-thin {
     scrollbar-width: thin;
   }
@@ -225,7 +221,7 @@
   }
 
   .scrollbar-track-transparent {
-    /* transparent track */
+
   }
 
   .hover\:scrollbar-thumb-accent\/50:hover {
